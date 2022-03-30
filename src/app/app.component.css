@@ -1,0 +1,7 @@
+input {
+  width: 100%;
+}
+
+.text {
+  border: dashed 2px rgb(143, 143, 143);
+}

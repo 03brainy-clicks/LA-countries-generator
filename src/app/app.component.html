@@ -1,0 +1,23 @@
+<div class="container text-white m-5">
+  <div class="col-8 mx-auto">
+    <h1 class="text-center m-5">Random Countries : {{ limit }}</h1>
+    <input
+      type="range"
+      min="1"
+      max="248"
+      value="{{ limit }}"
+      (change)="rangeHandle($event)"
+    />
+
+    <br />
+    <p class="text-center">
+      <button class="btn btn-primary my-5 btn-lg" (click)="generate()">
+        Generate
+      </button>
+    </p>
+
+    <div *ngIf="country" class="col-10 text mx-auto p-3">
+      {{ country }}
+    </div>
+  </div>
+</div>
